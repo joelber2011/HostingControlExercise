@@ -1,7 +1,8 @@
-﻿using Course.Entities;
+﻿using System;
 using HostingControlExercise.Entities.Exceptions;
+using HostingControlExercise.Entities;
 
-namespace Course
+namespace HostingControlExercise
 {
     class Program
     {

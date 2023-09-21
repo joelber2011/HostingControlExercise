@@ -1,6 +1,7 @@
-﻿using HostingControlExercise.Entities.Exceptions;
+﻿using System;
+using HostingControlExercise.Entities.Exceptions;
 
-namespace Course.Entities
+namespace HostingControlExercise.Entities
 {
     class Reservation
     {
@@ -35,8 +36,8 @@ namespace Course.Entities
         public void UpdateDates(DateTime checkIn, DateTime checkOut)
         {
 
-            DateTime now = DateTime.Now;
-            if (checkIn < now || checkOut < now)
+            /*DateTime now = DateTime.Now;*/
+            if (checkIn < CheckIn || checkOut < CheckOut)
             {
                 throw new DomainException("Reservation dates for update must be future dates");
             }
